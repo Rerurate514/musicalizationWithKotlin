@@ -11,6 +11,7 @@ class RealmInitClass : Application() {
         val config = RealmConfiguration.Builder().allowWritesOnUiThread(true)
             .deleteRealmIfMigrationNeeded()
             .build()
+
         Realm.setDefaultConfiguration(config)
     }
 }
